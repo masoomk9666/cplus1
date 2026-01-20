@@ -184,7 +184,7 @@ export default function BusinessModel() {
           consequat massa quis enim. Donec pede justo.
         </p>
         <button className="bg-[#DDF94A] text-[18px] font-[400] text-black px-6 py-2 rounded-full  transition-transform">
-          Contact Sales
+          Lets Talk
         </button>
       </div>
     </div>
