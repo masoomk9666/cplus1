@@ -44,23 +44,21 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center_left,_#1e5a66_0%,_transparent_25%)]"></div>
 
       {/* Content */}
-      <div className="relative z-10 w-full mx-auto pt-40">
+      <div className=" max-w-7xl relative z-10 w-full mx-auto pt-40">
         {/* Heading */}
-        <h1 className="text-white text-[64px] font-extrabold tracking-wide mb-5">
+        <h1 className="text-white text-[64px] font-extrabold tracking-wide mb-2">
           THE FUTURE IS HERE
         </h1>
 
         {/* Sub Heading */}
-        <h2 className="text-gray-200 text-[32px] uppercase tracking-wider mb-6">
-          YOUR GLOBAL PARTNER IN SOFTWARE DESIGN
+        <h2 className="text-gray-200 text-[32px] tracking-wider mb-6">
+          Your Global Partner in software design
         </h2>
 
         {/* Description */}
         <div className="flex items-center gap-6 max-w-4xl mb-10">
-          <p className="text-gray-300 text-[16px] leading-relaxed w-[85%]">
-            In a world of constant change, reinvention is a continuous strategy.
-            That’s why we work with organizations to rewrite the rules of growth,
-            innovation and resilience.
+          <p className="text-gray-300 text-[18px] leading-relaxed w-[95%]">
+            Cplus Soft is your global partner for software development, AI, creative design, and digital solutions that help businesses scale smarter and faster.
           </p>
         </div>
 
