@@ -34,7 +34,7 @@ export default function BusinessModel() {
       <p className="text-[16px] text-black uppercase mb-2">BUSINESS MODELS</p>
 
       {/* Main Heading */}
-      <h2 className="text-3xl md:text-[45px] font-[500] mb-6 text-center">
+      <h2 className="text-3xl md:text-[48px] font-[500] mb-6 text-center">
         How Can We Work With You
       </h2>
 
@@ -173,7 +173,7 @@ export default function BusinessModel() {
       <div className="w-full bg-black rounded-2xl p-8 md:p-20 text-center relative overflow-hidden bg-cover bg-center mt-10"
       style={{ backgroundImage: "url('/images/businessModel/bg1.png')" }}
       >
-        <h3 className="text-2xl md:text-[44px] font-[500] text-white mb-4">
+        <h3 className="text-2xl md:text-[48px] font-[500] text-white mb-4">
           Production Ready Solutions
         </h3>
         <p className="text-[18px] text-gray-300 mb-6 max-w-4xl mx-auto">

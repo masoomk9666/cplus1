@@ -270,7 +270,7 @@ export default function ServicesLabs() {
         Built In-House. Scaled for the Future
       </p>
 
-      <h2 className="text-[45px] font-[500] text-center mt-2">
+      <h2 className="text-[48px] font-[500] text-center mt-2">
         Our In-House Digital Innovations
       </h2>
 
@@ -324,7 +324,7 @@ export default function ServicesLabs() {
                   className={`px-7 py-[10px] rounded-lg  text-[16px] uppercase cursor-pointer transition
           ${
             activeTab === index
-              ? "bg-[#D0F94A] text-black"
+              ? "bg-black text-white"
               : "bg-white text-black"
           }`}
                 >

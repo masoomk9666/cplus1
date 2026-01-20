@@ -35,7 +35,7 @@ export default function ContactSection() {
         {/* FIRST ROW */}
         <div className="py-4 flex flex-col items-center ">
           <h3 className="text-black text-[16px] font-[500] mb-2">CONTACT US</h3>
-          <h2 className="text-[45px] font-[500] leading-tight mb-2">
+          <h2 className="text-[48px] font-[500] leading-tight mb-2">
             Do You Have A Challenge For Us?
           </h2>
           <p className="text-center w-[90%] max-w-2xl text-[18px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>

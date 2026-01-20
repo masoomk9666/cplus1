@@ -60,7 +60,7 @@ export default function StartupSection() {
     <section className="w-full max-w-7xl  py-25">
       {/* Top Row */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
-        <h1 className="text-4xl md:text-[45px] font-[500] text-black max-w-3xl">
+        <h1 className="text-4xl md:text-[48px] font-[500] text-black max-w-3xl">
           From Idea to Seed Funding — We Build Startups End-to-End
         </h1>
 

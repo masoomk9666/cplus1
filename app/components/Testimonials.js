@@ -88,7 +88,7 @@ export default function Testimonials() {
         <div className="relative ">
           <div>
             <h3 className="text-[16px] font-[400] mb-2 uppercase">Testimonials</h3>
-            <h2 className="text-[45px] font-[500]">
+            <h2 className="text-[48px] font-[500]">
               What Our Clients Say
             </h2>
           </div>
