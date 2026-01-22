@@ -119,7 +119,7 @@ export default function Leadership() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-14">
       {/* Heading */}
-      <h2 className="text-3xl font-semibold text-center mb-12">
+      <h2 className="text-[48px] font-medium text-center mb-12">
         Leadership & Management
       </h2>
 
@@ -132,14 +132,14 @@ export default function Leadership() {
           background: "linear-gradient(135deg, #3CDB9D, #D0F94A)",
         }}
       >
-        <div className="bg-white rounded-xl p-2 flex flex-col md:flex-row gap-6">
+        <div className="bg-white rounded-xl p-2 flex flex-col md:flex-row gap-10">
           <img
             src={head.image}
             alt={head.name}
-            className="w-32 h-32 md:w-40 md:h-40 rounded-lg object-cover bg-gradient-to-b from-black to-white"
+            className="w-32 h-32 md:w-70 md:h-60 rounded-lg object-cover bg-gradient-to-b from-black to-white"
           />
 
-          <div className="flex-1">
+          <div className="flex-1 py-3">
             <h3 className="text-[28px] font-medium">{head.name}</h3>
             <p className="text-black text-[16px] mb-2">{head.designation}</p>
 
@@ -158,7 +158,7 @@ export default function Leadership() {
 
             <div className="grid grid-cols-[6fr_0.5fr] items-start">
               <p
-                className={`text-gray-600 transition-all duration-300 ${
+                className={`text-black text-[18px] transition-all duration-300 ${
                   expand ? "line-clamp-none" : "line-clamp-2"
                 }`}
               >
@@ -167,7 +167,7 @@ export default function Leadership() {
 
               <button
                 onClick={() => setExpand(!expand)}
-                className="cursor-pointer flex justify-end pt-1"
+                className="cursor-pointer flex justify-center pt-1"
               >
                 {expand ? (
                   <MdKeyboardArrowUp size={25} />

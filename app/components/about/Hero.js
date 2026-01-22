@@ -132,7 +132,7 @@ export default function Hero() {
           </motion.h4>
 
           {/* Counters Box */}
-          <div className="mt-6 rounded-xl border border-transparent bg-gradient-to-r from-green-400 to-emerald-500 p-[1px]">
+          <div className="mt-6 rounded-xl border border-transparent bg-gradient-to-r from-[#3CDB9D] to-[#D0F94A] p-[1px]">
             <div className="bg-[#041417] rounded-xl grid grid-cols-2 md:grid-cols-4 gap-1 py-8">
               {MILESTONES.map((item, i) => (
                 <Counter

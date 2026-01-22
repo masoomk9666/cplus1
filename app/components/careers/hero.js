@@ -1,0 +1,45 @@
+"use client";
+
+import React from "react";
+
+const Hero = () => {
+  return (
+    <section
+      className="relative w-full min-h-[60vh] flex items-center justify-center bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/images/careers/careers-bg.png')",
+      }}
+    >
+
+  {/* //   <section
+  //     className="relative w-full min-h-[60vh] flex items-center justify-center bg-cover bg-center"
+  //     style={{
+  //       backgroundImage: "url('/images/careers/careers-bg.png')",
+  //       backgroundSize: "cover",
+  //       backgroundPosition: "center",
+  //     }}
+  //   >
+  // <div
+  //   className="absolute bottom-0 w-full h-[30%]" // height zyada karke curve dikhega
+  //   style={{
+  //     background: "radial-gradient(ellipse at top start, #42DC99 0%, #D0F94A26 40%, #BAF2F300 100%)",
+  //   }}
+  // /> */}
+      {/* Content */}
+      <div className="relative z-10 text-center px-6 max-w-4xl">
+        <h1 className="text-white text-[45px] md:text-[45px] font-medium tracking-wide mb-4">
+          Infinite Possibilities. One Team
+        </h1>
+
+        <p className="text-gray-200 text-[18px] md:text-[18px] font-normal leading-relaxed">
+          Whether you’re a Data Scientist, App Engineer, Tester or Developer —
+          your ideas matter here. At Indium, growth is continuous, curiosity is
+          celebrated, and innovation never stops. You’ll build with people who
+          question everything, prototype fast, and see beyond what exists.
+        </p>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
