@@ -28,7 +28,7 @@ const Cta = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-3xl md:text-5xl lg:text-[48px] font-medium text-black"
+            className="text-[24px] md:text-[48px] font-medium text-black"
           >
             Let’s Create What’s Next
           </motion.h1>
@@ -38,7 +38,7 @@ const Cta = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.2 }}
-            className="my-6 max-w-3xl text-sm md:text-base lg:text-[18px] text-black"
+            className="my-6 max-w-3xl text-[14px] md:text-[18px] text-black"
           >
             Have an idea, a challenge, or a vision to explore? We’re ready to
             collaborate and turn it into something impactful. Let’s start the

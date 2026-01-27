@@ -93,14 +93,14 @@ export default function Timeline() {
     <section className="py-28 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         {/* Heading */}
-        <p className="text-center uppercase  text-[16px] text-black">
+        <p className="text-center uppercase text-[12px] md:text-[16px] text-black">
           Our Journey
         </p>
 
-        <h2 className="text-center text-[48px] font-medium mt-3 mb-3 leading-tight">
+        <h2 className="text-center text-[24px] md:text-[48px] font-medium mt-3 mb-3 leading-tight">
           We started with one belief: great products are built with engineering discipline.
         </h2>
-        <p className="max-w-5xl mx-auto text-center text-[18px] text-black mb-20">
+        <p className="max-w-5xl mx-auto text-center text-[14px] md:text-[18px] text-black mb-20">
           Over the last decade, Cplus Soft has evolved from a software development partner into a full-scale AI engineering company. We build systems that help organizations run more smoothly, make smarter decisions, and scale digital transformation with confidence.
         </p>
 
@@ -188,155 +188,3 @@ export default function Timeline() {
   );
 }
 
-// "use client";
-// import { useEffect, useRef } from "react";
-
-// const timelineData = [
-//   {
-//     year: "2014",
-//     yearTitle: "Foundation",
-//     title: "Engineering-first from day one",
-//     description:
-//       "Cplus Soft is a top custom web application development company dedicated to reliable delivery. Focusing on clean architecture, maintainable code, and high-performance solutions, we help businesses scale efficiently.",
-//     image: "images/about/timelineImg.png",
-//   },
-//   {
-//     year: "2017",
-//     yearTitle: "Scale Across Platforms",
-//     title: "Expanding delivery capability",
-//     description:
-//       "As our clients grew, Cplus Soft expanded into full-scale web and mobile application development.",
-//     image: "images/about/timelineImg.png",
-//   },
-//   {
-//     year: "2018",
-//     yearTitle: "Product Development",
-//     title: "From delivery partner to product builder",
-//     description:
-//       "In 2018, Cplus Soft entered a new phase, focusing on building products and platforms with long-term impact.",
-//     image: "images/about/timelineImg.png",
-//   },
-//   {
-//     year: "2019",
-//     yearTitle: "AI at the Core",
-//     title: "Enterprise AI solutions at scale",
-//     description:
-//       "By 2019, AI became central to Cplus Soft’s expertise, delivering 250+ AI-powered solutions.",
-//     image: "images/about/timelineImg.png",
-//   },
-//   {
-//     year: "2025",
-//     yearTitle: "Product-First AI Engineering",
-//     title: "Built to enable transformation",
-//     description:
-//       "Today, Cplus Soft is a product-first AI engineering company with 250+ engineers worldwide.",
-//     image: "images/about/timelineImg.png",
-//   },
-// ];
-
-// export default function Timeline() {
-//   const progressRef = useRef(null);
-//   const cardRefs = useRef([]);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (!progressRef.current || !cardRefs.current.length) return;
-
-//       const firstCard = cardRefs.current[0];
-//       const lastCard = cardRefs.current[cardRefs.current.length - 1];
-
-//       const firstTop = firstCard.getBoundingClientRect().top + window.scrollY;
-//       const lastTop = lastCard.getBoundingClientRect().top + window.scrollY + lastCard.offsetHeight / 2;
-
-//       // Current scroll position
-//       const scrollY = window.scrollY + window.innerHeight / 2;
-
-//       // Calculate height
-//       let height = scrollY - firstTop;
-
-//       // Limit maxHeight to last card
-//       if (height > lastTop - firstTop) height = lastTop - firstTop;
-//       if (height < 0) height = 0;
-
-//       progressRef.current.style.height = `${height}px`;
-//     };
-
-//     const onScroll = () => {
-//       requestAnimationFrame(handleScroll);
-//     };
-
-//     window.addEventListener("scroll", onScroll);
-//     handleScroll(); // initial fill
-//     return () => window.removeEventListener("scroll", onScroll);
-//   }, []);
-
-//   return (
-//     <section className="py-28 bg-white relative">
-//       <div className="max-w-6xl mx-auto px-4">
-//         {/* Heading */}
-//         <p className="text-center uppercase text-[16px] text-black">Our Journey</p>
-//         <h2 className="text-center text-[48px] font-medium mt-3 mb-3 leading-tight">
-//           We started with one belief: great products are built with engineering discipline.
-//         </h2>
-//         <p className="max-w-5xl mx-auto text-center text-[18px] text-black mb-20">
-//           Over the last decade, Cplus Soft has evolved from a software development partner into a full-scale AI engineering company. We build systems that help organizations run more smoothly, make smarter decisions, and scale digital transformation with confidence.
-//         </p>
-
-//         {/* Timeline */}
-//         <div className="relative">
-//           {/* Base Line */}
-//           <div className="absolute left-1/2 -translate-x-1/2 w-[2px] h-full bg-[#3CDB9D]">
-//             {/* Progress Line */}
-//             <div
-//               ref={progressRef}
-//               className="absolute top-0 left-0 w-full bg-black transition-all duration-500 ease-out"
-//               style={{ height: 0 }}
-//             />
-//           </div>
-
-//           {timelineData.map((item, index) => {
-//             const isEven = index % 2 === 0;
-
-//             return (
-//               <div
-//                 key={index}
-//                 ref={(el) => (cardRefs.current[index] = el)}
-//                 className={`relative flex flex-col md:flex-row items-center mb-28 ${
-//                   !isEven ? "md:flex-row-reverse" : ""
-//                 }`}
-//               >
-//                 {/* Card Content */}
-//                 <div
-//                   className={`md:w-1/2 px-6 flex flex-col ${
-//                     isEven ? "items-end text-right" : "items-start text-left"
-//                   }`}
-//                 >
-//                   <div className={`flex gap-4 ${isEven ? "justify-end" : "justify-start"}`}>
-//                     <p className="text-[#3CDB9D]">{item.yearTitle}</p>
-//                     <span className="px-4 py-1 rounded-full bg-gradient-to-r from-[#3CDB9D] to-[#D0F94A]">
-//                       {item.year}
-//                     </span>
-//                   </div>
-
-//                   <h3 className="text-[32px] font-medium mt-4 mb-3">{item.title}</h3>
-//                   <p className="text-[18px]">{item.description}</p>
-//                   <img src={item.image} className="mt-6 w-20 h-20 rounded-full object-cover" alt="" />
-//                 </div>
-
-//                 {/* Circle */}
-//                 <div className="absolute left-1/2 -translate-x-1/2 top-0">
-//                   <div
-//                     className="w-5 h-5 rounded-full p-[2px] flex items-center justify-center"
-//                     style={{ background: "linear-gradient(135deg, #D0F94A, #3CDB9D)" }}
-//                   >
-//                     <div className="w-full h-full rounded-full bg-black" />
-//                   </div>
-//                 </div>
-//               </div>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }

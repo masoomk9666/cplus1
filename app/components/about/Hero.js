@@ -59,7 +59,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl lg:text-[48px] font-semibold"
+            className="text-[28px] md:text-4xl lg:text-[48px] font-semibold"
           >
             About{" "}
             <span className="bg-gradient-to-b from-[#D0F94A] to-[#3CDB9D] bg-clip-text text-transparent">
@@ -72,7 +72,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="mt-4 max-w-4xl mx-auto  md:[18px] text-white"
+            className="mt-4 max-w-4xl mx-auto text-[14px] md:[18px] text-white"
           >
             Cplus Soft is a Global Technology Partner specializing in AI-Driven
             Software Development, Creative Design, and Digital Transformation
@@ -83,42 +83,7 @@ export default function Hero() {
         </div>
       </section>
       <section>
-        {/* <div className="max-w-5xl mx-auto -mt-40">
-        <motion.h4
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mt-14 text-xs tracking-widest text-gray-400 uppercase text-center"
-        >
-          Our Milestones
-        </motion.h4>
-
-        <div className="mt-6 rounded-xl border border-transparent bg-gradient-to-r from-green-400 to-emerald-500 p-[1px]">
-          <div className="bg-[#041417] rounded-xl grid grid-cols-2 md:grid-cols-4 gap-6 py-8">
-
-            {[
-              { value: "10+", label: "Years of experience" },
-              { value: "800+", label: "Projects Delivered" },
-              { value: "500+", label: "Worldwide Clients" },
-              { value: "98+", label: "Positive Feedback" },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-                className="text-center text-white"
-              >
-                <h3 className="text-2xl md:text-3xl font-semibold">
-                  {item.value}
-                </h3>
-                <p className="mt-1 text-xs text-gray-400">{item.label}</p>
-              </motion.div>
-            ))}
-
-          </div>
-        </div>
-        </div> */}
+      
 
         <div className="max-w-7xl mx-auto -mt-40">
           {/* Our Milestones */}
@@ -126,7 +91,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mt-14 text-[16px] tracking-widest text-white uppercase text-center"
+            className="mt-14 text-[12px] md:text-[16px] tracking-widest text-white uppercase text-center"
           >
             Our Milestones
           </motion.h4>
@@ -143,7 +108,7 @@ export default function Hero() {
                   increment={item.increment}
                   /* Tailwind customization */
                   numberClass="text-2xl md:text-[48px] font-medium text-white"
-                  suffixClass="text-white text-[48px]"
+                  suffixClass="text-white text-[24px] md:text-[48px]"
                   titleClass="mt-1 text-[16px] text-white"
                 />
               ))}
@@ -157,7 +122,7 @@ export default function Hero() {
             <motion.h4
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-[16px] tracking-widest uppercase text-black"
+              className=" text-[12px] md:text-[16px] tracking-widest uppercase text-black"
             >
               Our Vision
             </motion.h4>
@@ -166,20 +131,12 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="mt-6 text-[36px] font-normal mb-4"
+              className="mt-6 text-[18px] md:text-[36px]  font-normal mb-4"
             >
               {displayText}
               <span className="animate-pulse">|</span>
             </motion.p>
 
-            {/* <motion.button
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="mt-8 px-6 py-2 rounded-full bg-[#1f2933] text-white text-sm hover:bg-black transition"
-            >
-              Access Our Code Of Business Conduct
-            </motion.button> */}
             <SkShadeBtn text="Access Our Code Of Business Conduct" shadeWidth="70" />
           </div>
         </div>

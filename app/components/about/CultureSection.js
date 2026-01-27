@@ -12,7 +12,7 @@ export default function CultureSection() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="uppercase tracking-widest text-[16px] text-black"
+          className="uppercase tracking-widest text-[12px] md:text-[16px] text-black"
         >
           Our Culture
         </motion.p>
@@ -22,7 +22,7 @@ export default function CultureSection() {
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-[48px] font-medium mt-4"
+          className="text-[24px] md:text-[48px] font-medium mt-4"
         >
           Life At Cplusoft
         </motion.h2>
@@ -32,7 +32,7 @@ export default function CultureSection() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.9 }}
-          className="mt-6 max-w-3xl mx-auto text-black text-[18px] "
+          className="mt-6 max-w-3xl mx-auto text-black text-[14px] md:text-[18px] "
         >
           At Cplusoft, Life isn’t just about work — it’s about innovation,
           growth, and community. We are a global team of creative thinkers,

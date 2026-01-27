@@ -80,7 +80,7 @@ export default function GlobalPresence() {
             }}
           ></div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 items-center p-3 lg:py-14 px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 items-center p-3 lg:py-14 px-4 lg:px-10">
             {/* LEFT – IMAGE */}
             <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[420px] rounded-xl overflow-hidden">
               <Image
@@ -99,15 +99,15 @@ export default function GlobalPresence() {
                 {slide.subtitle}
               </p> */}
 
-              <h2 className="text-3xl sm:text-[48px] font-medium mb-5">
+              <h2 className="text-[24px] md:text-[48px] font-medium mb-5">
                 {slide.title}
               </h2>
 
-              <p className="text-white text-[18px] leading-relaxed mb-4">
+              <p className="text-white text-[14px] md:text-[18px] leading-relaxed mb-4">
                 {slide.description1}
               </p>
 
-              <p className="text-white text-[18px] leading-relaxed">
+              <p className="text-white text-[14px] md:text-[18px] leading-relaxed">
                 {slide.description2}
               </p>
 

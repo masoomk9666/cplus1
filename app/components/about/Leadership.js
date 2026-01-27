@@ -119,7 +119,7 @@ export default function Leadership() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-14">
       {/* Heading */}
-      <h2 className="text-[48px] font-medium text-center mb-12">
+      <h2 className="text-[24px] md:text-[48px] font-medium text-center mb-12">
         Leadership & Management
       </h2>
 
@@ -136,12 +136,12 @@ export default function Leadership() {
           <img
             src={head.image}
             alt={head.name}
-            className="w-32 h-32 md:w-70 md:h-60 rounded-lg object-cover bg-gradient-to-b from-black to-white"
+            className="w-full h-full md:w-50 md:h-50 md:w-70 md:h-60 rounded-lg object-cover bg-gradient-to-b from-black to-white"
           />
 
           <div className="flex-1 py-3">
-            <h3 className="text-[28px] font-medium">{head.name}</h3>
-            <p className="text-black text-[16px] mb-2">{head.designation}</p>
+            <h3 className="text-[18px] md:text-[28px] font-medium">{head.name}</h3>
+            <p className="text-black text-[12px] md:text-[16px] mb-2">{head.designation}</p>
 
             <div className="flex gap-2 mb-4">
               {head.socials.linkedin && (
@@ -158,7 +158,7 @@ export default function Leadership() {
 
             <div className="grid grid-cols-[6fr_0.5fr] items-start">
               <p
-                className={`text-black text-[18px] transition-all duration-300 ${
+                className={`text-black text-[14px] md:text-[18px] transition-all duration-300 ${
                   expand ? "line-clamp-none" : "line-clamp-2"
                 }`}
               >
@@ -193,8 +193,8 @@ export default function Leadership() {
               className="w-50 h-50 border-b-10 border-t-4 border-x-7 border-gray-300 rounded-full mx-auto mb-4 object-cover bg-[#E9ECEB]"
             />
 
-            <h4 className="text-[24px] font-medium">{member.name}</h4>
-            <p className="text-black text-[16px] mb-3">{member.designation}</p>
+            <h4 className="text-[18px] md:text-[24px] font-medium">{member.name}</h4>
+            <p className="text-black text-[12px] md:text-[16px] mb-3">{member.designation}</p>
 
             <div className="flex justify-center gap-2">
               {member.socials.linkedin && (

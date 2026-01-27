@@ -7,67 +7,112 @@ import * as THREE from "three"
 const Hero = () => {
   const vantaRef = useRef(null)
   const vantaEffect = useRef(null)
+  const [isMobile, setIsMobile] = useState(false)
 
-  useEffect(() => {
-    if (!vantaEffect.current) {
-      import("vanta/dist/vanta.halo.min").then((VANTA) => {
-        vantaEffect.current = VANTA.default({
-          el: vantaRef.current,
-          THREE,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          baseColor: 0x35ff79,
-          // backgroundColor: 0x051c24,
-          backgroundColor: 0x051c20,
-          amplitudeFactor: 1.1,
-          xOffset: 0.30,
-        })
-      })
-    }
+  // Check if mobile/tablet
+  // useEffect(() => {
+  //   const checkIfMobile = () => {
+  //     setIsMobile(window.innerWidth < 1024)
+  //   }
 
-    return () => {
-      if (vantaEffect.current) {
-        vantaEffect.current.destroy()
-      }
-    }
-  }, [])
+  //   checkIfMobile()
+  //   window.addEventListener("resize", checkIfMobile)
+  //   return () => window.removeEventListener("resize", checkIfMobile)
+  // }, [])
+
+  // useEffect(() => {
+  //   if (!vantaEffect.current) {
+  //     import("vanta/dist/vanta.halo.min").then((VANTA) => {
+  //       vantaEffect.current = VANTA.default({
+  //         el: vantaRef.current,
+  //         THREE,
+  //         mouseControls: true,
+  //         touchControls: true,
+  //         gyroControls: false,
+  //         minHeight: 200.0,
+  //         minWidth: 200.0,
+  //         baseColor: 0x35ff79,
+  //         backgroundColor: 0x051c20,
+  //         amplitudeFactor: isMobile ? 0.8 : 1.1, // Reduce effect on mobile for performance
+  //         xOffset: isMobile ? 0.05 : 0.30,
+  //         yOffset: isMobile ? -0.28 : 0.0,
+  //         size: isMobile ? 0.8 : 1.0,
+  //       })
+  //     })
+  //   }
+
+  //   return () => {
+  //     if (vantaEffect.current) {
+  //       vantaEffect.current.destroy()
+  //       vantaEffect.current = null
+  //     }
+  //   }
+  // }, [isMobile])
 
   return (
     <section
       ref={vantaRef}
-      className="relative w-full min-h-screen px-30 overflow-hidden bg-[#051C24]"
+      className="relative w-full min-h-[60vh] md:min-h-screen px-4 sm:px-6 md:px-8 lg:px-30 overflow-hidden bg-[#051C24]"
     >
-      {/* Optional Radial Overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center_left,_#1e5a66_0%,_transparent_25%)]"></div>
+      <video
+                key="Home Bg Video"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+              >
+                <source src="videos/home/01.mp4" type="video/mp4" />
+              </video>
+
+              <div className="absolute inset-0 bg-black/30 h-full" />
+      {/* Optional Radial Overlay - Responsive */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center_left,_#1e5a66_0%,_transparent_25%)] md:bg-[radial-gradient(circle_at_center_left,_#1e5a66_0%,_transparent_30%)] lg:bg-[radial-gradient(circle_at_center_left,_#1e5a66_0%,_transparent_25%)]"></div>
 
       {/* Content */}
-      <div className=" max-w-7xl relative z-10 w-full mx-auto pt-40">
-        {/* Heading */}
-        <h1 className="text-white text-[64px] font-extrabold tracking-wide mb-2">
+      <div className="relative z-10 w-full mx-auto pt-20 md:pt-28 lg:pt-40 px-4 sm:px-6 md:px-8 lg:px-0">
+        {/* Heading - Responsive */}
+        <h1 className="text-white text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] font-extrabold tracking-wide mb-2 md:mb-4 leading-tight sm:leading-snug md:leading-normal">
           THE FUTURE IS HERE
         </h1>
 
-        {/* Sub Heading */}
-        <h2 className="text-gray-200 text-[32px] tracking-wider mb-6">
+        {/* Sub Heading - Responsive */}
+        <h2 className="text-gray-200 text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] tracking-wider mb-4 md:mb-6 leading-relaxed">
           Your Global Partner in software design
         </h2>
 
-        {/* Description */}
-        <div className="flex items-center gap-6 max-w-4xl mb-10">
-          <p className="text-gray-300 text-[18px] leading-relaxed w-[95%]">
+        {/* Description - Responsive */}
+        <div className="flex items-start gap-4 md:gap-6 max-w-4xl mb-8 md:mb-10">
+          <p className="text-gray-300 text-[14px] sm:text-[16px] md:text-[18px] leading-relaxed md:leading-loose w-full">
             Cplus Soft is your global partner for software development, AI, creative design, and digital solutions that help businesses scale smarter and faster.
           </p>
         </div>
 
-        {/* Button */}
-        <button className="flex items-center gap-3 bg-white/15 border border-gray-300 text-white px-6 py-2 rounded-full text-[18px] font-[400] hover:bg-[#D0F94A] hover:text-[#051C24] hover:border-[#D0F94A] transition">
+        {/* Button - Responsive */}
+        <button className="flex items-center justify-center md:justify-start gap-2 md:gap-3 bg-white/15 border border-gray-300 text-white px-4 sm:px-5 md:px-6 py-2 md:py-3 rounded-full text-[14px] sm:text-[16px] md:text-[18px] font-[400] hover:bg-[#D0F94A] hover:text-[#051C24] hover:border-[#D0F94A] transition w-full md:w-auto">
           Learn More
-          <CircleChevronRight />
+          <CircleChevronRight size={isMobile ? 18 : 24} />
         </button>
+
+        {/* Additional spacing for mobile */}
+        <div className="h-16 md:h-0"></div>
       </div>
+
+      {/* Mobile optimization for Vanta background */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          section {
+            min-height: 90vh;
+            height: 90vh;
+          }
+        }
+        
+        @media (max-width: 1024px) {
+          section {
+            min-height: 95vh;
+          }
+        }
+      `}</style>
     </section>
   )
 }
